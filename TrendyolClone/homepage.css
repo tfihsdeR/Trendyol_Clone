@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 6000px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+#headerTop {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+}
+
+#stickyHeader {
+    display: flex;
+    height: 64px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: white;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 64px;
+}
+
+#accountNavigation {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+#accountNavigation div {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation a {
+    text-decoration: none;
+}
+
+#navigation {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.col-sm-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-sm-4 img {
+    border-radius: 50%;
+    border: 1px solid;
+    font-size: 13px;
+    height: 68px;
+    width: 68px;
+}
+
+.announcements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageContainer img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.campaignSummary {
+    width: 100%;
+    height: 38px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.campaignSummary div {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.campaignSummary div .hoverText {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.announcements .announcementContainer {
+    display: flex;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 12.5px;
+}
+
+.announcement:hover {
+    .campaignSummary {
+        background-color: orange;
+    }
+}
+
+.bannerSmmallItems {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bannerHugeItems {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bannerHugeItem {
+    width: 33.33%;
+    padding: 20px;
+}
+
+.bannerHugeItem img {
+    width: 100%;
+}
